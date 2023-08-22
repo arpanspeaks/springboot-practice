@@ -16,7 +16,7 @@ public class Mission {
     private Integer id;
 
     @Column(nullable = false)
-    private String missionName;
+    private String missionname;
 
     @Column(nullable = false)
     private int duration;

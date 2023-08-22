@@ -16,7 +16,7 @@ public class Department {
     private Integer id;
 
     @Column(nullable = false)
-    private String deptName;
+    private String deptname;
 
     @OneToMany(mappedBy = "department")
     private List<Employee> employees;

@@ -14,12 +14,12 @@ public class Address {
     private Integer id;
 
     @Column(nullable = false)
-    private String streetName;
+    private String streetname;
 
-    private String houseNumber;
+    private String housenumber;
 
     @Column(nullable = false)
-    private String zipCode;
+    private String zipcode;
 
     @OneToOne
     @JoinColumn(name = "employee_id")
