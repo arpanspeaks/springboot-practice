@@ -15,6 +15,7 @@ public class Department {
     @GeneratedValue
     private Integer id;
 
+    @Column(nullable = false)
     private String deptName;
 
     @OneToMany(mappedBy = "department")

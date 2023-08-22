@@ -1,9 +1,6 @@
 package com.example.springbootpractice.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToMany;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -18,8 +15,10 @@ public class Mission {
     @GeneratedValue
     private Integer id;
 
+    @Column(nullable = false)
     private String missionName;
 
+    @Column(nullable = false)
     private int duration;
 
     @ManyToMany(mappedBy = "missions")

@@ -13,10 +13,12 @@ public class Address {
     @GeneratedValue
     private Integer id;
 
+    @Column(nullable = false)
     private String streetName;
 
     private String houseNumber;
 
+    @Column(nullable = false)
     private String zipCode;
 
     @OneToOne
